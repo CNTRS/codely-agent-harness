@@ -72,24 +72,24 @@ Two ways to use `codely-doc-create`:
 
 | Skill                                                                                                | What it does                                                                                                                     |
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| [`codely-plan-create`](.agents/skills/codely-plan-create/SKILL.md)                                   | Breaks a task into reviewable phases (vertical slices), defines the public contracts to change, and saves an approved plan file. |
-| [`codely-plan_phase-implement`](.agents/skills/codely-plan_phase-implement/SKILL.md)                 | Executes a single phase of a plan at a time, updates its checkboxes, and stops for review without committing automatically.      |
+| [`codely-plan-create-subagents`](.agents/skills/codely-plan-create-subagents/SKILL.md)                                   | Breaks a task into reviewable phases (vertical slices), defines the public contracts to change, and saves an approved plan file. |
+| [`codely-plan-phase-implement`](.agents/skills/codely-plan-phase-implement/SKILL.md)                 | Executes a single phase of a plan at a time, updates its checkboxes, and stops for review without committing automatically.      |
 | [`codely-plan-create-github`](.agents/skills/codely-plan-create-github/SKILL.md)                     | Same planning flow, but stored as GitHub issues: a parent plan issue and one native sub-issue per phase.                        |
-| [`codely-plan_phase-implement-github`](.agents/skills/codely-plan_phase-implement-github/SKILL.md)   | Implements one phase issue at a time on its linked branch and opens a pull request that closes the issue on merge.              |
+| [`codely-plan-phase-implement-github`](.agents/skills/codely-plan-phase-implement-github/SKILL.md)   | Implements one phase issue at a time on its linked branch and opens a pull request that closes the issue on merge.              |
 
 Typical flow:
 
-- **Plan** the work with `/codely-plan-create <task>` to produce a phased plan file under `.agents/plans/`.
-- **Implement** it phase by phase with `/codely-plan_phase-implement <plan-file-path>`, reviewing and committing after
+- **Plan** the work with `/codely-plan-create-subagents <task>` to produce a phased plan file under `.agents/plans/`.
+- **Implement** it phase by phase with `/codely-plan-phase-implement <plan-file-path>`, reviewing and committing after
   each one.
 
 #### 🔀 Git
 
 | Skill                                                             | What it does                                                                                              |
 |-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [`codely-git-conventional_commit`](.agents/skills/codely-git-conventional_commit/SKILL.md) | Creates a Git commit following the team's Conventional Commits conventions and co-author trailer. |
+| [`codely-git-conventional-commit`](.agents/skills/codely-git-conventional-commit/SKILL.md) | Creates a Git commit following the team's Conventional Commits conventions and co-author trailer. |
 
-Run `/codely-git-conventional_commit` to stage and commit your changes with a conventional message.
+Run `/codely-git-conventional-commit` to stage and commit your changes with a conventional message.
 
 ## 🗣️ Output styles
 
