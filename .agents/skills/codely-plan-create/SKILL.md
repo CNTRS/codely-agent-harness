@@ -1,5 +1,5 @@
 ---
-name: codely-plan-create-subagents
+name: codely-plan-create
 description: Create a plan for the specified task.
 disable-model-invocation: true
 user-invocable: true
