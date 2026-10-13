@@ -20,6 +20,13 @@
 			]
 		},
 		{
+			"title": "OpenSpec",
+			"description": "Skills for working with OpenSpec specs.",
+			"skills": [
+				"codely-openspec_spec-create_from_code"
+			]
+		},
+		{
 			"title": "Git",
 			"description": "Skills for working with Git following the team's conventions.",
 			"skills": [
