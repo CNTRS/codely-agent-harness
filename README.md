@@ -98,6 +98,25 @@ Two ways to use `codely-openspec_spec-create_from_code`:
 
 Only intended and verified behaviour reaches the spec: bugs, accidental behaviour and dead code are reported instead.
 
+##### 🧩 `codely-spec-plan` schema
+
+An [OpenSpec custom schema](https://github.com/Fission-AI/OpenSpec/blob/main/docs/customization.md) that brings the
+`codely-plan-create` flow to OpenSpec. Each change produces only two things to review:
+
+- **Lean specs**: one sentence with SHALL per requirement and a single-line scenario.
+- **`plan.md`**: goal, context and vertical slice phases with their contracts. Its checkboxes are the task list that
+  `/openspec-apply-change` works through.
+
+Install it in your project and select it in `openspec/config.yaml`:
+
+```bash
+npx degit CodelyTV/agent-harness/openspec/schemas/codely-spec-plan openspec/schemas/codely-spec-plan
+```
+
+```yaml
+schema: codely-spec-plan
+```
+
 #### 🔀 Git
 
 | Skill                                                             | What it does                                                                                              |
