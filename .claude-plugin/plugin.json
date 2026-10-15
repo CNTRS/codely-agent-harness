@@ -18,6 +18,6 @@
 		"./.agents/skills/codely-plan-create-github",
 		"./.agents/skills/codely-plan-phase-implement",
 		"./.agents/skills/codely-plan-phase-implement-github",
-		"./.agents/skills/codely-openspec_spec-create_from_code"
+		"./.agents/skills/codely-openspec-spec-create-from-code"
 	]
 }

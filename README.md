@@ -87,13 +87,13 @@ Typical flow:
 
 | Skill                                                                                                    | What it does                                                                                                                                        |
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [`codely-openspec_spec-create_from_code`](.agents/skills/codely-openspec_spec-create_from_code/SKILL.md) | Writes the [OpenSpec](https://openspec.dev) specs of behaviour that already exists in the code, so the next change can modify or remove it instead of only adding to it. |
+| [`codely-openspec-spec-create-from-code`](.agents/skills/codely-openspec-spec-create-from-code/SKILL.md) | Writes the [OpenSpec](https://openspec.dev) specs of behaviour that already exists in the code, so the next change can modify or remove it instead of only adding to it. |
 
-Two ways to use `codely-openspec_spec-create_from_code`:
+Two ways to use `codely-openspec-spec-create-from-code`:
 
-- **Before a change** — run `/codely-openspec_spec-create_from_code <the change you are about to make>` to specify the
+- **Before a change** — run `/codely-openspec-spec-create-from-code <the change you are about to make>` to specify the
   current behaviour it will touch, then continue with `/openspec-explore`.
-- **To catch up** — run `/codely-openspec_spec-create_from_code <capability>` to specify an existing feature, or without
+- **To catch up** — run `/codely-openspec-spec-create-from-code <capability>` to specify an existing feature, or without
   arguments to list the features that still lack a spec.
 
 Only intended and verified behaviour reaches the spec: bugs, accidental behaviour and dead code are reported instead.

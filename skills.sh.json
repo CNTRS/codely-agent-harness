@@ -23,7 +23,7 @@
 			"title": "OpenSpec",
 			"description": "Skills for working with OpenSpec specs.",
 			"skills": [
-				"codely-openspec_spec-create_from_code"
+				"codely-openspec-spec-create-from-code"
 			]
 		},
 		{
