@@ -103,8 +103,9 @@ Only intended and verified behaviour reaches the spec: bugs, accidental behaviou
 An [OpenSpec custom schema](https://github.com/Fission-AI/OpenSpec/blob/main/docs/customization.md) that brings the
 `codely-plan-create-subagents` flow to OpenSpec. Each change produces only two things to review:
 
-- **Lean specs**: one sentence with SHALL per requirement and a single-line scenario.
-- **`plan.md`**: goal, context and vertical slice phases with their contracts. Its checkboxes are the task list that
+- **Lean specs**: one behaviour with SHALL per requirement and a single-line scenario.
+- **`plan.md`**: goal, decisions and one vertical slice phase per part a user can complete a goal with, each with its
+  contracts and tests mapped to spec scenarios. Its checkboxes are the task list that
   `/openspec-apply-change` works through.
 
 Install it in your project and select it in `openspec/config.yaml`:
