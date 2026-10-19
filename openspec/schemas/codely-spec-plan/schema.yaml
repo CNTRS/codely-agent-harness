@@ -36,7 +36,6 @@ apply:
   requires: [plan]
   tracks: plan.md
   instruction: |
-    Implement the phases in order and check off each task as you finish it.
-    Run the verification task of a phase before starting the next one.
-    Stop only on a blocker or a verification failure you cannot fix.
-    When done, add `implemented_by` (same shape as `created_by`) and `last_implementation_at` to the frontmatter, rewrite the Next step, and suggest one conventional commit message per phase. Do not commit.
+    Implement only the first phase with unchecked tasks and check off each task as you finish it.
+    When the phase's verification task passes, add or update `implemented_by` (same shape as `created_by`) and `last_implementation_at` in the frontmatter and rewrite the Next step.
+    Then commit the phase, plan.md included, as one conventional commit, and stop: the next phase starts only when the user runs apply again.

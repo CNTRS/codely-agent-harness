@@ -45,6 +45,6 @@ created_by:
 
 ## Next step
 
-Run `/openspec-apply-change` to implement every phase.
+Run `/openspec-apply-change` to implement the first phase.
 
 <!-- Creative closing line including 🐢 💨 (Turbotuga™, [Codely](https://codely.com)'s mascot) -->
