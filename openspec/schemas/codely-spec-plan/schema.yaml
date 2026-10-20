@@ -22,8 +22,8 @@ artifacts:
       Plan how to implement the specs. Keep it short: it is reviewed together with the specs.
 
       - Decisions: choices and assumptions not stated in the request, one line each, naming the discarded alternative when it is not obvious. End with what is out of scope.
-      - Phases: one phase per part of the change that is worth having on its own, even if the rest were never built: a user can complete a goal with it. Parts that are only valuable together form one phase. Each phase is a vertical slice (UI, logic and persistence together) that builds, passes verification alone and never leaves the system in a wrong business state.
-      - Contracts: public signatures only, in the project's language, grouped by type (domain, application services, ports and repositories, domain events, database schemas, UI copy). No constructor dependencies. Omit types without changes.
+      - Phases: one phase per part of the change that is worth having on its own, even if the rest were never built: a user can complete a goal with it. Parts that are only valuable together form one phase. Each phase is a vertical slice through every layer and repository the part needs (API contract, UI, logic and persistence together) that builds, passes verification alone and never leaves the system in a wrong business state.
+      - Contracts: public signatures only, in the language each one is written in, grouped by type (API endpoints and payloads, domain, application services, ports and repositories, domain events, database schemas, UI copy). No constructor dependencies. Omit types without changes.
       - Tests: acceptance and application service suites with their test cases in the project's naming convention, each case naming the scenario it covers. Cover every scenario unless the project's testing strategy excludes that layer.
       - Tasks: cite the existing code to copy patterns from in the task that needs it.
       - Each phase ends with the verification task of the template.
@@ -38,4 +38,4 @@ apply:
   instruction: |
     Implement only the first phase with unchecked tasks and check off each task as you finish it.
     When the phase's verification task passes, add or update `implemented_by` (same shape as `created_by`) and `last_implementation_at` in the frontmatter and rewrite the Next step.
-    Then commit the phase, plan.md included, as one conventional commit, and stop: the next phase starts only when the user runs apply again.
+    Then commit the phase as one conventional commit in each repository it touched, plan.md included in the repository that holds it, and stop: the next phase starts only when the user runs apply again.
