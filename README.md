@@ -105,7 +105,7 @@ An [OpenSpec custom schema](https://github.com/Fission-AI/OpenSpec/blob/main/doc
 
 - **Lean specs**: one behaviour with SHALL per requirement and a single-line scenario.
 - **`plan.md`**: goal, decisions and one vertical slice phase per part a user can complete a goal with, each with its
-  contracts and tests mapped to spec scenarios. Its checkboxes are the task list that
+  contracts and a test strategy that proves it with few tests. Its checkboxes are the task list that
   `/openspec-apply-change` works through one phase per run, committing each phase.
 
 Install it in your project and select it in `openspec/config.yaml`:

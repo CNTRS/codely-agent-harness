@@ -37,8 +37,7 @@ created_by:
 
 **Tests**
 
-- `<!-- test suite -->`
-  - <!-- test case --> (<!-- scenario it covers -->)
+- `<!-- test suite -->`: <!-- behaviours it covers -->
 
 - [ ] <!-- task -->
 - [ ] Verify typecheck, lint and every test suite with the project's verification commands, and check the phase's behaviour in the running app. Fix issues if any.
